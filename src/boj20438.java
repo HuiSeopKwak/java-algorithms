@@ -1,6 +1,6 @@
 /*****
- * ¹éÁØ 20438¹ø Ãâ¼®Ã¼Å©
- * ÇĞ»ı ¹øÈ£´Â 3 ~ n+2 ±îÁö
+ * ë°±ì¤€ 20438ë²ˆ ì¶œì„ì²´í¬
+ * í•™ìƒ ë²ˆí˜¸ëŠ” 3 ~ n+2 ê¹Œì§€
 
 */
 import java.util.Scanner;
@@ -9,24 +9,24 @@ public class boj20438 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		// 1¹øÂ°ÁÙ ÀÔ·Â
-		int n = sc.nextInt();	// ÀúÃ¼ ÇĞ»ı ¼ö
-		int k = sc.nextInt();	// Á¶´Â ÇĞ»ı ¼ö
-		int q = sc.nextInt();	// Ãâ¼® ÄÚµå º¸³¾ ÇĞ»ı ¼ö
-		int m = sc.nextInt();	// ÁÖ¾îÁú ±¸°£ÀÇ ¼ö
+		// 1ë²ˆì§¸ì¤„ ì…ë ¥
+		int n = sc.nextInt();	// ì €ì²´ í•™ìƒ ìˆ˜
+		int k = sc.nextInt();	// ì¡°ëŠ” í•™ìƒ ìˆ˜
+		int q = sc.nextInt();	// ì¶œì„ ì½”ë“œ ë³´ë‚¼ í•™ìƒ ìˆ˜
+		int m = sc.nextInt();	// ì£¼ì–´ì§ˆ êµ¬ê°„ì˜ ìˆ˜
 		
-		int[] k_stu = new int[k];	// Á¶´Â ÇĞ»ıµéÀÇ ÀÔÀå ¹øÈ£ ¹è¿­
-		int[] q_stu = new int[q];	// Ãâ¼® ÄÚµå º¸³¾ ÇĞ»ıµéÀÇ ÀÔÀå ¹øÈ£ ¹è¿­
+		int[] k_stu = new int[k];	// ì¡°ëŠ” í•™ìƒë“¤ì˜ ì…ì¥ ë²ˆí˜¸ ë°°ì—´
+		int[] q_stu = new int[q];	// ì¶œì„ ì½”ë“œ ë³´ë‚¼ í•™ìƒë“¤ì˜ ì…ì¥ ë²ˆí˜¸ ë°°ì—´
 		
-		// 2¹øÂ°ÁÙ Á¶´Â ÇĞ»ı ÀÔÀå ¹øÈ£
+		// 2ë²ˆì§¸ì¤„ ì¡°ëŠ” í•™ìƒ ì…ì¥ ë²ˆí˜¸
 		for (int i = 0; i < k; i++) {
 			k_stu[i] = sc.nextInt();
 		}
-		// 3¹øÂ°ÁÙ Ãâ¼® ÄÚµå º¸³¾ ÇĞ»ı ¹øÈ£
+		// 3ë²ˆì§¸ì¤„ ì¶œì„ ì½”ë“œ ë³´ë‚¼ í•™ìƒ ë²ˆí˜¸
 		for (int i = 0; i < q; i++) {
 			q_stu[i] = sc.nextInt();
 		}
-		// 4¹øÂ°ÁÙ ±¸°£ °£°İ
+		// 4ë²ˆì§¸ì¤„ êµ¬ê°„ ê°„ê²©
 		int s = sc.nextInt();
 		int e = sc.nextInt();
 		

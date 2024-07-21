@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 /*****
- * ¹éÁØ 11660 ±¸°£ ÇÔ ±¸ÇÏ±â
+ * ë°±ì¤€ 11660 êµ¬ê°„ í•¨ êµ¬í•˜ê¸°
 
 */
 public class boj1749 {
@@ -13,10 +13,10 @@ public class boj1749 {
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		int n = Integer.parseInt(st.nextToken());
 		int m = Integer.parseInt(st.nextToken());
-		int [][] board = new int[n][m];		// ÀÔ·Â ¹ŞÀ» ¹è¿­
-		int [][] Sboard = new int[n][m];	// ´©ÀûÇÕ ¹è¿­
+		int [][] board = new int[n][m];		// ì…ë ¥ ë°›ì„ ë°°ì—´
+		int [][] Sboard = new int[n][m];	// ëˆ„ì í•© ë°°ì—´
 		
-		// ¹è¿­ ÀÔ·Â ¹Ş±â±â
+		// ë°°ì—´ ì…ë ¥ ë°›ê¸°ê¸°
 		for (int i = 0; i < n; i++) {
 			st = new StringTokenizer(br.readLine());
 			for (int j = 0; j < m; j++) {

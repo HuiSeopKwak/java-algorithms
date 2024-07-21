@@ -13,17 +13,28 @@ public class boj1749 {
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		int n = Integer.parseInt(st.nextToken());
 		int m = Integer.parseInt(st.nextToken());
-		int [][] board = new int[n][m];		// 입력 받을 배열
-		int [][] Sboard = new int[n][m];	// 누적합 배열
+		int [][] board = new int[n+1][m+1];		// 입력 받을 배열
+		int [][] Sboard = new int[n+1][m+1];	// 누적합 배열
 		
-		// 배열 입력 받기기
-		for (int i = 0; i < n; i++) {
+		// 배열 입력 받기
+		for (int i = 1; i < n + 1; i++) {
 			st = new StringTokenizer(br.readLine());
-			for (int j = 0; j < m; j++) {
-				Sboard[i][j] = Integer.parseInt(st.nextToken());
+			for (int j = 1; j < m + 1; j++) {
+				board[i][j] = Integer.parseInt(st.nextToken());
+			}
+		}
+		// 누적합 배열 만들기
+		for (int i = 1; i < n + 1; i++) {
+			for (int j = 1; j < m + 1; j++) {
+				Sboard[i][j] = Sboard[i][j-1] + Sboard[i-1][j] - Sboard[i-1][j-1] + board[i][j];
+			}
+		}
+		// 부분 배열 최대합 구하기
+		for (int i = 1; i < n + 1; i++) {
+			for (int j = 1; j < m + 1; j++) {
+				Sboard[i][j] = Sboard[i][j-1] + Sboard[i-1][j] - Sboard[i-1][j-1] + board[i][j];
 			}
 		}
 		
 	}
-
 }

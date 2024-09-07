@@ -2,11 +2,11 @@
 <section name="Workbench">
 	<section name="ExternalProjectImportWizard">
 		<section name="ExternalProjectImportWizard.dialogBounds">
-			<item value="586" key="DIALOG_WIDTH"/>
-			<item value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont" key="DIALOG_FONT_NAME"/>
-			<item value="703" key="DIALOG_HEIGHT"/>
-			<item value="219" key="DIALOG_X_ORIGIN"/>
-			<item value="61" key="DIALOG_Y_ORIGIN"/>
+			<item key="DIALOG_WIDTH" value="586"/>
+			<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+			<item key="DIALOG_HEIGHT" value="703"/>
+			<item key="DIALOG_X_ORIGIN" value="219"/>
+			<item key="DIALOG_Y_ORIGIN" value="61"/>
 		</section>
 	</section>
 	<section name="WORKBENCH_SETTINGS">
@@ -14,7 +14,7 @@
 		</list>
 	</section>
 	<section name="ChooseWorkspaceDialogSettings">
-		<item value="204" key="DIALOG_X_ORIGIN"/>
-		<item value="197" key="DIALOG_Y_ORIGIN"/>
+		<item key="DIALOG_X_ORIGIN" value="204"/>
+		<item key="DIALOG_Y_ORIGIN" value="197"/>
 	</section>
 </section>

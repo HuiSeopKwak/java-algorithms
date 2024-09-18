@@ -6,7 +6,9 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 /**
- * 백준 22871 징검다리 건너기 메모리 : KB 시간 : ms
+ * 백준 22871 징검다리 건너기 
+ * 메모리 : 15072 KB 
+ * 시간 : 196 ms
  */
 public class Boj22871 {
 	static int N;
@@ -30,7 +32,7 @@ public class Boj22871 {
 		dp[0] = 0;
 		for (long i = 1; i < N; i++) {
 			for (long j = 0; j < i; j++) {
-				dp[(int) i] = Math.min((i - j) * (1 + Math.abs(A[(int) i] - A[(int) j])), dp[(int) i]);
+				dp[(int) i] = Math.min(dp[(int) i], Math.max(dp[(int) j], (i - j) * (1 + Math.abs(A[(int) i] - A[(int) j]))));
 			}
 		}
 		System.out.println(dp[N - 1]);

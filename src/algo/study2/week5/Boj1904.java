@@ -6,7 +6,6 @@ import java.util.Scanner;
  * 백준 1904 01타일
  * 메모리 : 21560 KB
  * 시간 : 180 ms
- *
  */
 public class Boj1904 {
 	static int N;

@@ -26,7 +26,7 @@ public class Boj15649 {
         }
 
         for (int i = 1; i <= a; i++) {
-            if (visited[i] == true)
+            if (visited[i])
                 continue;
 
             visited[i] = true;

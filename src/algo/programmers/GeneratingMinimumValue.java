@@ -1,5 +1,10 @@
 package algo.programmers;
 
+/***
+ * 최솟값 만들기
+ * programmers lv2
+ */
+
 import java.util.Arrays;
 
 public class GeneratingMinimumValue {

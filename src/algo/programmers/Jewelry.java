@@ -30,6 +30,7 @@ public class Jewelry {
         
         // 1. 대괄호 제거
         str = str.substring(1, str.length() - 1);
+        str = str.substring(1);
         
         // 2. 쉼표 기준으로 문자열을 나눠 배열로 변환
         String[] arr = str.split(",");

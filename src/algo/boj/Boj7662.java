@@ -1,4 +1,7 @@
 package algo.boj;
+/**
+ * 백준 7662 이중 우선순위 큐
+ */
 
 import java.io.BufferedReader;
 import java.io.IOException;

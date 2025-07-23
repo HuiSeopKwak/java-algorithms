@@ -6,7 +6,7 @@ import java.util.Deque;
 import java.util.Scanner;
 
 /**
- * 백준 13549 숨바꼭질
+ * 백준 13549 숨바꼭질 3
  */
 public class Boj13549 {
     static int k;
